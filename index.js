@@ -28,6 +28,11 @@ import { promises as fs } from "fs";
   };
   // deletar metas
   let deletarMetas = async () => {
+    if (metas.length == 0) {
+      console.log("Não existe metas");
+      return;
+    }
+
     let metasDemacadas = metas.map((meta) => {
       return {
         value: meta.value,
@@ -57,6 +62,11 @@ import { promises as fs } from "fs";
 
   // metas em aberto
   let metasAbetas = async () => {
+    if (metas.length == 0) {
+      console.log("Não existe metas");
+      return;
+    }
+
     let abertas = metas.filter((aberta) => {
       return aberta.checked == false;
     });
@@ -74,6 +84,11 @@ import { promises as fs } from "fs";
 
   //metas metasRealizadas
   let metasRealizadas = async () => {
+    if (metas.length == 0) {
+      console.log("Não existe metas");
+      return;
+    }
+
     let realizadas = metas.filter((realizada) => {
       return realizada.checked == true;
     });
@@ -90,6 +105,10 @@ import { promises as fs } from "fs";
   };
   // lista na tela
   let listarMetas = async () => {
+    if (metas.length == 0) {
+      console.log("Não existe metas");
+      return;
+    }
     const respostas = await checkbox({
       message:
         "Use as setas para mudar de meta e <espaço> para marcar ou desmarca as metas,<enter> para finalizar.",

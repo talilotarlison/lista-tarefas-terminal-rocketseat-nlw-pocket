@@ -1,5 +1,5 @@
 
-# Meu Projeto Lista Tarefas em Node.js feito no evento nlw-pocket da Rocketseat
+# Meu Projeto Lista Tarefas de Metas em Node.js feito no evento nlw-pocket da Rocketseat
 
 Projeto roda no terminal do sistema, se apresentar algum erro atente as informações abaixo:
 
